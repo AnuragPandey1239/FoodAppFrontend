@@ -1,0 +1,51 @@
+<p>add-menu works!</p>
+<p>add-admin works!</p>
+<div class="container">
+    <form #addDataForm="ngForm" (ngSubmit)="addMenu(addDataForm)">
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="category" 
+            name="category"
+            #category="ngModel"
+            placeholder="Enter the Category">
+        </div>
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="itemId" 
+            name="itemId"
+            #itemId="ngModel"
+            placeholder="Enter the Item Id">
+        </div>
+
+        <!-- <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="email" 
+            name="email"
+            #email="ngModel"
+            placeholder="Enter the Admin Email ">
+        </div>
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="password" 
+            name="password"
+            #password="ngModel"
+            placeholder="Enter Admin password">
+        </div> -->
+        
+        
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>

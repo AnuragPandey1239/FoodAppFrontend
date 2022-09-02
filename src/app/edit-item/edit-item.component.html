@@ -1,0 +1,58 @@
+<p>edit-item works!</p>
+<div class="container">
+    <form #addDataForm="ngForm" (ngSubmit)="addItem(addDataForm)">
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="itemName" 
+            name="itemName"
+            #itemName="ngModel"
+            placeholder="Enter the item name">
+        </div>
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="type" 
+            name="type"
+            #type="ngModel"
+            placeholder="Enter the item type">
+        </div>
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="quantity" 
+            name="quantity"
+            #quantity="ngModel"
+            placeholder="Enter the item quantity">
+        </div>
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="price" 
+            name="price"
+            #price="ngModel"
+            placeholder="Enter the products price">
+         </div>
+         <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="image" 
+            name="image"
+            #image="ngModel"
+            placeholder="Enter the products image">
+         </div>
+        
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>

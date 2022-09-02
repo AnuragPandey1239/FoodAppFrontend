@@ -1,0 +1,37 @@
+<p>admin-details works!</p>
+<div class="container">
+    <h3>admin-details works!</h3>
+    
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+            <th scope="col">branch_id</th>
+
+            <!-- <th scope="col">Edit</th>
+            <th scope="col">Delete</th> -->
+            
+            <!-- <th scope="col">Product Image</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let r of result">
+            
+            <td>{{r.id}}</td>
+            <td>{{r.name}}</td>
+            <td>{{r.email}}</td>
+            <td>{{r.password}}</td>
+
+
+            
+            <!-- <td><button class="=btn btn-primary" [routerLink]="['/edit-admin/',r._id]">Edit</button></td>
+            <td><button class="=btn btn-primary" (click)="deleteAdmin(r.id)">Delete</button></td> -->
+          </tr> 
+          
+          
+        </tbody>
+      </table>
+    </div>

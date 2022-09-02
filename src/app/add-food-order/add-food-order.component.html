@@ -1,0 +1,61 @@
+<div class="container">
+    <form #addDataForm="ngForm" (ngSubmit)="addAdmin(addDataForm)">
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="status" 
+            name="status"
+            #status="ngModel"
+            placeholder="Enter the Status">
+        </div>
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="totalPrice" 
+            name="totalPrice"
+            #totalPrice="ngModel"
+            placeholder="Enter the Price ">
+        </div>
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="orderCreatedTime" 
+            name="orderCreatedTime"
+            #orderCreatedTime="ngModel"
+            placeholder="Enter orderCreatedTime">
+        </div>
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="orderDeliveryTime" 
+            name="orderDeliveryTime"
+            #orderDeliveryTime="ngModel"
+            placeholder="Enter orderDeliveryTime">
+        </div>
+        <div class="form-group">
+            <input 
+            type="text"
+            class="form-control"
+            ngModel
+            id="contactNumber" 
+            name="contactNumber"
+            #contactNumber="ngModel"
+            placeholder="Enter contactNumber">
+        </div>
+
+
+        
+        
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
